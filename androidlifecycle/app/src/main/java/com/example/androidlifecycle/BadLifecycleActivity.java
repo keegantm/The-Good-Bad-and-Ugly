@@ -45,3 +45,14 @@ public class BadLifecycleActivity extends AppCompatActivity {
     }
 
 }
+
+
+
+/*
+Problems:
+- No implementation for pausing/resuming the video
+- need to suspend the video onStop since the view is in the background
+- need to be able to pause/resume the video
+- Also causes the video to restart when the phone orientation changes since the bundle
+will not contain the video timestamp
+ */
